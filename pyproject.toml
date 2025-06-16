@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orbit-simulation-toolkit"
+version = "0.1.1"
+description = "A Python package for simulating and analyzing relativistic and classical two-body systems"
+authors = [
+  { name = "Wladimir Banda", email = "wbanda@yachaytech.edu.ec" },
+  { name = "Milagros Delgado", email = "milagros.delgado@yachaytech.edu.ec" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+dependencies = [
+  "scipy",  
+  "numpy",
+  "matplotlib",
+  "pandas",
+  "pillow"
+] 
+
+[project.urls]
+Homepage = "https://github.com/cPhysPlus/orbit-simulation-toolkit"
+
+[tool.setuptools.packages.find]
+where = ["orbits"]
