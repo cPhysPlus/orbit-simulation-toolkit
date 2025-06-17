@@ -26,10 +26,10 @@ python -m orbits --mass_bh 5e6 --sm_axis 1. --compare_rel_class --save_gif
 
 #### Other examples
 
-1. **Eccentricity Comparison**:
+1. **Method Comparison**:
 
    ```bash
-   python -m orbits --mass_bh 5e6 --compare_ecc --save_gif
+   python -m orbits --mass_bh 5e6 --compare_methods --save_gif
    ```
 
 2. **Full Analysis**:
@@ -40,13 +40,13 @@ python -m orbits --mass_bh 5e6 --sm_axis 1. --compare_rel_class --save_gif
 
 #### Available Flags
 
-| Flag                  | Description                          | Outputs                      |
-|-----------------------|--------------------------------------|------------------------------|
-| `--compare_rel_class` | Relativistic vs classical comparison | `rel_vs_class_analysis.csv`  |
-| `--compare_methods`   | Integration method comparison        | `methods_comp.csv`           |
-| `--convergence`       | Convergence analysis                 | `convergence_results.csv`    |
-| `--compare_ecc`       | Eccentricity comparison              | `eccentricity_analysis.csv`  |
-| `--save_gif`          | Save animation as GIF                | See `outputfolder/animations`|
+| Flag                  | Description                          |
+|-----------------------|--------------------------------------|
+| `--compare_rel_class` | Relativistic vs classical comparison |
+| `--compare_methods`   | Integration method comparison        |
+| `--convergence`       | Convergence analysis                 |
+| `--save_gif`          | Save animation as gif                |
+| `--save_grid`         | Save grid as npy                     |
 
 You can combine flags as needed.
 
@@ -57,7 +57,7 @@ You can also use the toolkit in your own scripts or Jupyter notebooks:
 ```python
 from orbits import TwoBodyProblem, SimulationRunner, AnalysisTools, AnimationCreator
 
-system = TwoBodyProblem(ecc=0.1, mass_bh=5e6, sm_axis=1.0, orb_period=2, method='RK3')
+system = TwoBodyProblem(ecc = 0.1, mass_bh = 5e6, sm_axis = 1., orb_period = 2, method = 'RK3')
 runner = SimulationRunner(system)
 t, s = runner.run_simulation()
 ```
