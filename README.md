@@ -86,7 +86,7 @@ orbit-simulation-toolkit
 │   ├── __main__.py
 │   └── orbits.py
 └── tests/
-    └── tests-orbits.py
+    └── test-orbits.py
 ├── analysis.ipynb
 ├── LICENSE
 ├── pyproject.toml
