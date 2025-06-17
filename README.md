@@ -83,18 +83,14 @@ outputfolder/
 orbit-simulation-toolkit
 ├── orbits/
 │   ├── __init__.py
+│   ├── __main__.py
 │   └── orbits.py
 └── tests/
-    ├── tests-orbits.py
-    └── TBA
+    └── tests-orbits.py
 ├── analysis.ipynb
 ├── LICENSE
 ├── pyproject.toml
-├── README.md
-└── outputfolder/
-    ├── animations/
-    ├── grids/
-    └── orbits_data/
+└── README.md
 ```
 
 ---
