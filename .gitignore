@@ -3,10 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environment
-venv/
-env/
-
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
@@ -15,20 +11,8 @@ outputfolder/orbits_data/
 outputfolder/animations/
 outputfolder/grids/
 
-# OS files
-.DS_Store
-Thumbs.db
-
-# Test and coverage outputs
-*.cover
-*.coverage
-.cache
-nosetests.xml
-coverage.xml
-*.log
-
 # Pytest cache
 .pytest_cache/
 
-# VS Code settings (optional)
+# VS Code settings
 .vscode/
