@@ -26,7 +26,7 @@ python -m orbits --mass_bh 5e6 --sm_axis 1. --compare_rel_class --save_gif
 
 #### Other examples
 
-1. **Method Comparison**:
+1. **Methods Comparison**:
 
    ```bash
    python -m orbits --mass_bh 5e6 --compare_methods --save_gif
